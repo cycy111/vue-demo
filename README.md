@@ -1,4 +1,4 @@
-# web-home
+# web-home mine
 
 ## Project setup
 ```
@@ -33,6 +33,9 @@ yarn run test:e2e
 ### Run your unit tests
 ```
 yarn run test:unit
+#我的修改
+yarn update
+yarn init
 ```
 
 ### Customize configuration
