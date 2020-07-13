@@ -1,0 +1,1018 @@
+{
+    "pageIndex": 1,
+    "pageSize": 10,
+    "counts": 0.0,
+    "data": {
+        "kpiInfo": [],
+        "depart": [],
+        "kpiData": [
+            {
+                "indexName": "周转率",
+                "kValue": "8.00000",
+                "pcValue": "0.34",
+                "ncValue": "0.09",
+                "kResult": "达标",
+                "deptCode": null,
+                "createDate": null,
+                "reportDate": null,
+                "years": null,
+                "months": null,
+                "itemName": "KPI指标情况",
+                "itemValue": null,
+                "echart": [
+                    {
+                        "title": "周转率",
+                        "model": "kpiData",
+                        "xAxis": [
+                            "上月完成值",
+                            "本月完成值"
+                        ],
+                        "series": [
+                            {
+                                "data": [
+                                    "0.34",
+                                    "0.09"
+                                ],
+                                "name": null,
+                                "countType": null,
+                                "datetime": null
+                            }
+                        ],
+                        "legend": []
+                    }
+                ]
+            }
+        ],
+        "amountInfo": [
+            {
+                "deptCode": null,
+                "years": "2018",
+                "pMonths": "9",
+                "pYears": "2018",
+                "ppMonths": "8",
+                "ppYears": "2018",
+                "months": "10",
+                "productType": "办公用品",
+                "itemName": "本月出入库对比情况",
+                "itemValue": "amountInfo",
+                "amountDt": [
+                    {
+                        "amount": "0",
+                        "countType": "入库",
+                        "reportDate": "2018-10"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-10"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "入库",
+                        "reportDate": "2018-9"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-9"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "入库",
+                        "reportDate": "2018-8"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-8"
+                    }
+                ],
+                "echart": [
+                    {
+                        "title": "本月出入库对比情况",
+                        "model": "amountInfo",
+                        "xAxis": [
+                            "办公用品",
+                            "备品备件",
+                            "工程物资",
+                            "业务用品",
+                            "应急物资"
+                        ],
+                        "series": [
+                            {
+                                "data": [
+                                    "0",
+                                    "81864"
+                                ],
+                                "name": "入库金额",
+                                "countType": "入库",
+                                "datetime": "2018-10"
+                            },
+                            {
+                                "data": [
+                                    "0",
+                                    "0",
+                                    "0",
+                                    "0"
+                                ],
+                                "name": "出库金额",
+                                "countType": "出库",
+                                "datetime": "2018-10"
+                            }
+                        ],
+                        "legend": [
+                            "入库金额",
+                            "出库金额"
+                        ]
+                    },
+                    {
+                        "title": "上个月月出入库对比情况",
+                        "model": "amountInfo",
+                        "xAxis": [
+                            "办公用品",
+                            "备品备件",
+                            "工程物资",
+                            "业务用品",
+                            "应急物资"
+                        ],
+                        "series": [
+                            {
+                                "data": [
+                                    "158751",
+                                    "114893",
+                                    "0"
+                                ],
+                                "name": "入库金额",
+                                "countType": "入库",
+                                "datetime": "2018-9"
+                            },
+                            {
+                                "data": [
+                                    "0",
+                                    "0",
+                                    "0"
+                                ],
+                                "name": "出库金额",
+                                "countType": "出库",
+                                "datetime": "2018-9"
+                            }
+                        ],
+                        "legend": [
+                            "入库金额",
+                            "出库金额"
+                        ]
+                    },
+                    {
+                        "title": "上上个月出入库对比情况",
+                        "model": "amountInfo",
+                        "xAxis": [
+                            "办公用品",
+                            "备品备件",
+                            "工程物资",
+                            "业务用品",
+                            "应急物资"
+                        ],
+                        "series": [
+                            {
+                                "data": [
+                                    "0",
+                                    "804494",
+                                    "92887",
+                                    "0"
+                                ],
+                                "name": "入库金额",
+                                "countType": "入库",
+                                "datetime": "2018-8"
+                            },
+                            {
+                                "data": [
+                                    "0",
+                                    "0",
+                                    "0",
+                                    "0"
+                                ],
+                                "name": "出库金额",
+                                "countType": "出库",
+                                "datetime": "2018-8"
+                            }
+                        ],
+                        "legend": [
+                            "入库金额",
+                            "出库金额"
+                        ]
+                    }
+                ]
+            },
+            {
+                "deptCode": null,
+                "years": "2018",
+                "pMonths": "9",
+                "pYears": "2018",
+                "ppMonths": "8",
+                "ppYears": "2018",
+                "months": "10",
+                "productType": "备品备件",
+                "itemName": "本月出入库对比情况",
+                "itemValue": "amountInfo",
+                "amountDt": [
+                    {
+                        "amount": "0",
+                        "countType": "入库",
+                        "reportDate": "2018-10"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-10"
+                    },
+                    {
+                        "amount": "158751",
+                        "countType": "入库",
+                        "reportDate": "2018-9"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-9"
+                    },
+                    {
+                        "amount": "804494",
+                        "countType": "入库",
+                        "reportDate": "2018-8"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-8"
+                    }
+                ],
+                "echart": null
+            },
+            {
+                "deptCode": null,
+                "years": "2018",
+                "pMonths": "9",
+                "pYears": "2018",
+                "ppMonths": "8",
+                "ppYears": "2018",
+                "months": "10",
+                "productType": "工程物资",
+                "itemName": "本月出入库对比情况",
+                "itemValue": "amountInfo",
+                "amountDt": [
+                    {
+                        "amount": "81864",
+                        "countType": "入库",
+                        "reportDate": "2018-10"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-10"
+                    },
+                    {
+                        "amount": "114893",
+                        "countType": "入库",
+                        "reportDate": "2018-9"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-9"
+                    },
+                    {
+                        "amount": "92887",
+                        "countType": "入库",
+                        "reportDate": "2018-8"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-8"
+                    }
+                ],
+                "echart": null
+            },
+            {
+                "deptCode": null,
+                "years": "2018",
+                "pMonths": "9",
+                "pYears": "2018",
+                "ppMonths": "8",
+                "ppYears": "2018",
+                "months": "10",
+                "productType": "业务用品",
+                "itemName": "本月出入库对比情况",
+                "itemValue": "amountInfo",
+                "amountDt": [
+                    {
+                        "amount": "0",
+                        "countType": "入库",
+                        "reportDate": "2018-10"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-10"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "入库",
+                        "reportDate": "2018-9"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-9"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "入库",
+                        "reportDate": "2018-8"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-8"
+                    }
+                ],
+                "echart": null
+            },
+            {
+                "deptCode": null,
+                "years": "2018",
+                "pMonths": "9",
+                "pYears": "2018",
+                "ppMonths": "8",
+                "ppYears": "2018",
+                "months": "10",
+                "productType": "应急物资",
+                "itemName": "本月出入库对比情况",
+                "itemValue": "amountInfo",
+                "amountDt": [
+                    {
+                        "amount": "0",
+                        "countType": "入库",
+                        "reportDate": "2018-10"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-10"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "入库",
+                        "reportDate": "2018-9"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-9"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "入库",
+                        "reportDate": "2018-8"
+                    },
+                    {
+                        "amount": "0",
+                        "countType": "出库",
+                        "reportDate": "2018-8"
+                    }
+                ],
+                "echart": null
+            }
+        ],
+        "orderInfo": [
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "inOrderlist": [
+                    {
+                        "data": [],
+                        "echart": null
+                    }
+                ],
+                "outOrderlist": [
+                    {
+                        "data": [],
+                        "echart": null
+                    }
+                ],
+                "otherOrderlist": [
+                    {
+                        "data": [
+                            {
+                                "billtType": "项目变更",
+                                "qty": "4"
+                            }
+                        ],
+                        "echart": null
+                    }
+                ],
+                "itemValue": "orderInfo",
+                "itemName": "仓库总体单据情况"
+            }
+        ],
+        "sAmountInfo": [
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "130.000000",
+                "kcAmount": "769080",
+                "productType": null,
+                "productName": "诺基亚 ENODEB RRU 室内单通道2.3G 交流FZNN",
+                "belongDept": "11",
+                "belongPerson": "肖成才",
+                "idleDays": "166",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "仓库金额排名靠前的主要物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "260.000000",
+                "kcAmount": "250120",
+                "productType": null,
+                "productName": "诺基亚 TD LTE 拉远光模块 (9.8G) FOSP",
+                "belongDept": "11",
+                "belongPerson": "肖成才",
+                "idleDays": "166",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "仓库金额排名靠前的主要物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "12.000000",
+                "kcAmount": "105996",
+                "productType": null,
+                "productName": "诺基亚 eNodeB RRU 室外8通道1.9G FZFF-e(30M)",
+                "belongDept": "11",
+                "belongPerson": "肖成才",
+                "idleDays": "36",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "仓库金额排名靠前的主要物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "4720.000000",
+                "kcAmount": "99544",
+                "productType": null,
+                "productName": "PVC线槽",
+                "belongDept": "12",
+                "belongPerson": "关正",
+                "idleDays": "41",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "仓库金额排名靠前的主要物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "600.000000",
+                "kcAmount": "74874",
+                "productType": null,
+                "productName": "GPON\\华为\\智能家庭网关1USB+单频WIFI\\HS8545M",
+                "belongDept": "12",
+                "belongPerson": "彭泽宇",
+                "idleDays": "206",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "仓库金额排名靠前的主要物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "22.000000",
+                "kcAmount": "67122",
+                "productType": null,
+                "productName": "普通光缆\\GYTA53\\G.652D\\24芯",
+                "belongDept": "11",
+                "belongPerson": "陈安义",
+                "idleDays": "64",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "仓库金额排名靠前的主要物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "24.000000",
+                "kcAmount": "60192",
+                "productType": null,
+                "productName": "普通光缆/GYTA.G652D.24芯",
+                "belongDept": "11",
+                "belongPerson": "陈安义",
+                "idleDays": "64",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "仓库金额排名靠前的主要物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "48.000000",
+                "kcAmount": "58005",
+                "productType": null,
+                "productName": "铅酸蓄电池\\2V\\I类\\1000Ah",
+                "belongDept": "11",
+                "belongPerson": "阿坝_孙双通",
+                "idleDays": "111",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "仓库金额排名靠前的主要物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "855.000000",
+                "kcAmount": "46341",
+                "productType": null,
+                "productName": "1:8SC/UPC插片式光分路器G657a1",
+                "belongDept": "11",
+                "belongPerson": "苏建",
+                "idleDays": "21",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "仓库金额排名靠前的主要物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "500.000000",
+                "kcAmount": "38675",
+                "productType": null,
+                "productName": "光缆接头盒\\双端\\48芯\\架空\\束状光缆",
+                "belongDept": "11",
+                "belongPerson": "陈安义",
+                "idleDays": "58",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "仓库金额排名靠前的主要物资",
+                "echart": []
+            }
+        ],
+        "dullInfoBySixMonths": [
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "600.000000",
+                "kcAmount": "74874",
+                "productType": null,
+                "productName": "GPON\\华为\\智能家庭网关1USB+单频WIFI\\HS8545M",
+                "belongDept": "12",
+                "belongPerson": "彭泽宇",
+                "idleDays": "206",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "超6个月呆滞金额前10物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "1.000000",
+                "kcAmount": "1652",
+                "productType": null,
+                "productName": "FAD频段\\高增益\\智能天线宽频\\诺基亚通用",
+                "belongDept": "11",
+                "belongPerson": "李俊波",
+                "idleDays": "211",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "超6个月呆滞金额前10物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "82.000000",
+                "kcAmount": "0",
+                "productType": null,
+                "productName": "FBIH（拓展板）",
+                "belongDept": "11",
+                "belongPerson": "阿坝_李俊波",
+                "idleDays": "230",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "超6个月呆滞金额前10物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "5.000000",
+                "kcAmount": "0",
+                "productType": null,
+                "productName": "普通光缆\\GYTS\\G.652D\\12芯",
+                "belongDept": "12",
+                "belongPerson": "马朝锐",
+                "idleDays": "216",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "超6个月呆滞金额前10物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "2.000000",
+                "kcAmount": "0",
+                "productType": null,
+                "productName": "FZFH（RRU)",
+                "belongDept": "",
+                "belongPerson": "xm103",
+                "idleDays": "669",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "超6个月呆滞金额前10物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "54.000000",
+                "kcAmount": "0",
+                "productType": null,
+                "productName": "亿璐富HT-008定制纯棉T恤",
+                "belongDept": "16",
+                "belongPerson": "周磊",
+                "idleDays": "220",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "超6个月呆滞金额前10物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "52.000000",
+                "kcAmount": "0",
+                "productType": null,
+                "productName": "10米直连光纤(LC-LC)",
+                "belongDept": "",
+                "belongPerson": "xm103",
+                "idleDays": "669",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "超6个月呆滞金额前10物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "42.000000",
+                "kcAmount": "0",
+                "productType": null,
+                "productName": "克洛ZE-L-007A中型急救箱310mm",
+                "belongDept": "16",
+                "belongPerson": "周磊",
+                "idleDays": "220",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "超6个月呆滞金额前10物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "30.000000",
+                "kcAmount": "0",
+                "productType": null,
+                "productName": "铁附件-拉线地锚 2400x20m/m",
+                "belongDept": "11",
+                "belongPerson": "阿坝_孙双通",
+                "idleDays": "190",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "超6个月呆滞金额前10物资",
+                "echart": []
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "kcQty": "27.000000",
+                "kcAmount": "0",
+                "productType": null,
+                "productName": "腔体耦合器-高功率等级产品-10dB-N型头-全频",
+                "belongDept": "11",
+                "belongPerson": "阿坝_李俊波",
+                "idleDays": "216",
+                "location": null,
+                "area": null,
+                "warehouse": null,
+                "productUnit": null,
+                "amountType": null,
+                "itemName": "超6个月呆滞金额前10物资",
+                "echart": []
+            }
+        ],
+        "dullInfoByTwoYears": [],
+        "planInfo": [
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "billType": "入库",
+                "allQty": "0",
+                "planQty": "0",
+                "ontimeQty": "0",
+                "planRate": "0",
+                "ontimeRate": "0",
+                "remark": null,
+                "itemName": "预约情况通报",
+                "echart": null
+            },
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "billType": "出库",
+                "allQty": "0",
+                "planQty": "0",
+                "ontimeQty": "0",
+                "planRate": "0",
+                "ontimeRate": "0",
+                "remark": null,
+                "itemName": "预约情况通报",
+                "echart": null
+            }
+        ],
+        "cBillInfo": [
+            {
+                "deptCode": null,
+                "years": null,
+                "months": null,
+                "billType": "月盘",
+                "qty": "0",
+                "remark": "0",
+                "itemName": "盘点情况通报",
+                "echart": null
+            },
+            {
+                "deptCode": null,
+                "years": null,
+                "months": null,
+                "billType": "日盘",
+                "qty": "3",
+                "remark": "",
+                "itemName": "盘点情况通报",
+                "echart": []
+            },
+            {
+                "deptCode": null,
+                "years": null,
+                "months": null,
+                "billType": "周盘",
+                "qty": "0",
+                "remark": "0",
+                "itemName": "盘点情况通报",
+                "echart": null
+            }
+        ],
+        "personInfo": [
+            {
+                "deptCode": null,
+                "years": null,
+                "months": null,
+                "item": "上月人数",
+                "qty": "0",
+                "remark": null,
+                "inQty": null,
+                "inRemark": null,
+                "leaveQty": null,
+                "leaveRemark": null,
+                "pQty": null,
+                "pRemark": null,
+                "itemName": "人员变动情况",
+                "echart": [],
+                "creator": null,
+                "createDate": null,
+                "modifier": null,
+                "modifyDate": null
+            },
+            {
+                "deptCode": null,
+                "years": null,
+                "months": null,
+                "item": "本月离职",
+                "qty": "0",
+                "remark": null,
+                "inQty": null,
+                "inRemark": null,
+                "leaveQty": null,
+                "leaveRemark": null,
+                "pQty": null,
+                "pRemark": null,
+                "itemName": null,
+                "echart": null,
+                "creator": null,
+                "createDate": null,
+                "modifier": null,
+                "modifyDate": null
+            },
+            {
+                "deptCode": null,
+                "years": null,
+                "months": null,
+                "item": "本月入职",
+                "qty": "0",
+                "remark": null,
+                "inQty": null,
+                "inRemark": null,
+                "leaveQty": null,
+                "leaveRemark": null,
+                "pQty": null,
+                "pRemark": null,
+                "itemName": null,
+                "echart": null,
+                "creator": null,
+                "createDate": null,
+                "modifier": null,
+                "modifyDate": null
+            },
+            {
+                "deptCode": null,
+                "years": null,
+                "months": null,
+                "item": "本月人数",
+                "qty": "0",
+                "remark": null,
+                "inQty": null,
+                "inRemark": null,
+                "leaveQty": null,
+                "leaveRemark": null,
+                "pQty": null,
+                "pRemark": null,
+                "itemName": null,
+                "echart": null,
+                "creator": null,
+                "createDate": null,
+                "modifier": null,
+                "modifyDate": null
+            }
+        ],
+        "reportDesInfo": [
+            {
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "reportItemCode": "orderInfo",
+                "remark": "878787",
+                "creator": "122",
+                "createDate": "2018-11-22 14:59:43",
+                "modifier": "122",
+                "modifyDate": "2018-11-22 14:59:43"
+            }
+        ],
+        "whcodeArea": [
+            {
+                "id": null,
+                "deptCode": "ABA",
+                "years": "2018",
+                "months": "10",
+                "whCode": "1号",
+                "data": [
+                    {
+                        "areaName": "区域1",
+                        "productName": "青菜",
+                        "size": "900.000",
+                        "useRate": 90.0,
+                        "proportion": 92.0,
+                        "edit": false
+                    },
+                    {
+                        "areaName": "区域2",
+                        "productName": "萝卜",
+                        "size": "80.000",
+                        "useRate": 88.0,
+                        "proportion": 8.0,
+                        "edit": false
+                    }
+                ],
+                "itemValue": null,
+                "itemName": "仓库总体面积使用",
+                "echart": [
+                    {
+                        "title": "1号仓库面积使用情况",
+                        "model": "whcodeArea",
+                        "xAxis": [
+                            "青菜",
+                            "萝卜"
+                        ],
+                        "series": [
+                            {
+                                "data": [
+                                    "0.92000",
+                                    "0.08000"
+                                ],
+                                "name": "1号",
+                                "countType": null,
+                                "datetime": "2018-10"
+                            }
+                        ],
+                        "legend": []
+                    }
+                ],
+                "editTitle": false
+            }
+        ],
+        "monReportList": []
+    },
+    "resultCode": 1,
+    "resultCodes": "",
+    "message": "success"
+}

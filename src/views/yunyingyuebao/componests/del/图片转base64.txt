@@ -1,0 +1,23 @@
+$("#headPortraitUpload").on("change",headPortraitListener);
+
+
+ /*定义全局变量存贮图片信息*/
+ var base64head="";
+/*头像上传监听*/
+function headPortraitListener(e) {
+    var img = document.getElementById('headPortraitImgShow');
+      if(window.FileReader) {
+          var file  = e.target.files[0];
+          var reader = new FileReader();
+          if (file && file.type.match('image.*')) {
+              reader.readAsDataURL(file);
+          } else {
+              img.css('display', 'none');
+              img.attr('src', '');
+          }
+          reader.onloadend = function (e) {
+          img.setAttribute('src', reader.result);
+          base64head = reader.result;
+        }
+      }
+}

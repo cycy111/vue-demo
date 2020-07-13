@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta content=webkit name=renderer>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">   
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <style type="text/css">
+        body, html, #container {
+            height: 99%;
+            margin: 0px;
+            min-height: 100px;
+        }
+        #loadingTip {
+        position: absolute;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        padding: 3px 10px;
+        background: red;
+        color: #fff;
+        font-size: 14px;
+    }
+    </style>
+    <script src="js/jquery-1.2.6.js"></script>
+    <script src="js/jquery.base64.js"></script>
+    <title>地图显示</title>
+</head>
+<body>
+    <img src="imgs/poi1.png" style="display:none";/>
+    <img src="imgs/poi3.png" style="display:none";/>
+    <img src="imgs/car.png" style="display:none";/>
+    <div id="container"></div>
+
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.2&key=6505ec512e5a72adec6a61b2b1b46535"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.8&key=6505ec512e5a72adec6a61b2b1b46535&plugin=AMap.Driving"></script>
+    <!-- UI组件库 1.0 -->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <script type="text/javascript">
+      $('<div id="loadingTip">加载数据，请稍候...</div>').appendTo(document.body);
+        //初始化为utf8编码、解码
+        $.base64.utf8encode = true; 
+        $.base64.utf8decode = true;
+       
+        //获取参数
+        var _Id=getQueryString("DevNo"); //"14531737074"; getQueryString("DevNo"); 
+        var _bgnTime=getQueryString("bgnTime");//"2018/05/21 12:12:12";  getQueryString("bgnTime");
+        var _endTime=getQueryString("endTime");//"2018/05/29 12:12:12";  getQueryString("endTime");
+        var _OrdNO=getQueryString("OrdNO");
+        var _EntId=getQueryString("EntId");
+        var _OrdIDX=getQueryString("OrdIDX");
+        var _PlateNo=getQueryString("PlateNo");
+        var _driveTel=getQueryString("driveTel");
+        var _OrderDELIVERYTime=getQueryString("OrderDELIVERYTime");
+        if(_PlateNo.length>0)
+        {
+            _PlateNo = _PlateNo.replace(/[-]/g, "+"); //替换“-”为 base64中的“+”
+            _PlateNo = _PlateNo.replace(/[_]/g, "\/"); //替换“_””为 base64中的“/
+            _PlateNo = $.base64.atob(_PlateNo); 
+        } 
+        function getQueryString(name) {
+            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return unescape(r[2]);
+            }
+            return null;
+        }     
+         //发送ajax请求
+        $.ajax({
+            url: "http://apizh.668tms.com/api/map/getbsjdata/",  
+         // url: "http://192.168.1.13:81/api/getbsjdata/",
+            type: "POST",
+            data: JSON.stringify({
+                Id:_Id,
+                bgnTime:_bgnTime,
+                endTime:_endTime,
+                OrdNO:_OrdNO,
+                EntId:_EntId,
+                OrdIdx:_OrdIDX,
+                PlateNo:_PlateNo,
+                DriveTel:_driveTel,
+                DeliveryTime:_OrderDELIVERYTime
+            }),
+            dataType: 'json',
+            async: true,
+            contentType: "application/json",
+            processData: false,
+            cache: false,
+            beforeSend: function () { },
+            complete: function () { },
+            success: function (res) {
+                 showLocation(res);
+            }
+        });
+        var map = new AMap.Map('container', {  zoom: 4});      
+        AMap.plugin(['AMap.ToolBar','AMap.Scale'],function(){
+            map.addControl(new AMap.ToolBar());
+            map.addControl(new AMap.Scale());
+        })    
+        function showLocation(res) {
+            var rtnData=JSON.parse(res);  
+            var msg1=rtnData.data1;           
+            var msg2=rtnData.data2;  
+            var isDelivery= rtnData.isDelivery;              
+            var marker1 = new AMap.Marker({
+            position:msg1[0].lnglat,
+            icon: new AMap.Icon
+                    ({  size: new AMap.Size(40, 50),  
+                    image: "imgs/poi1.png",
+                   // imageOffset: new AMap.Pixel(3, 0) 
+                    })
+            }); 
+            var marker2 = new AMap.Marker({
+            position:  msg2[msg2.length-1].lnglat,
+            icon: new AMap.Icon
+                    ({  size: new AMap.Size(40, 50),  
+                    image: "imgs/poi3.png",
+                     imageOffset: new AMap.Pixel(3, 0) 
+                    })
+            });
+           if(isDelivery<1)
+           {
+               //路径规划 
+               var driving = new AMap.Driving({ map: map,hideMarkers:true,showTraffic:false}); 
+               driving.search(msg1[msg1.length-1].lnglat,msg2[msg2.length-1].lnglat); 
+            }   
+            //坐标展示  
+            AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
+
+                if (!PathSimplifier.supportCanvas) {   alert('当前环境不支持 Canvas！'); return; }
+                var pathSimplifierIns = new PathSimplifier({
+                        zIndex: 100,  //autoSetFitView:false,
+                        map: map, //所属的地图实例
+
+                        getPath: function(pathData, pathIndex) {
+                            var points = pathData.points,
+                                lnglatList = [];
+                            for (var i = 0, len = points.length; i < len; i++) {
+                                lnglatList.push(points[i].lnglat);
+                            }
+                            return lnglatList;
+                        },
+                        getHoverTitle: function(pathData, pathIndex, pointIndex) {
+                            if (pointIndex >= 0) {                        //point 
+                                return pathData.name + '，' + pathData.points[pointIndex].name;
+                            }
+                            //return pathData.name + '，点数量' + pathData.points.length;
+                        },
+                        renderOptions: {
+                            pathLineStyle: {
+                                lineWidth: 3,
+                                strokeStyle: '#55189b',
+                                borderWidth: 2,
+                                borderStyle: '#2d0808',
+                                dirArrowStyle: false
+                            },
+                            startPointStyle: {
+                                radius: 6,
+                                fillStyle: '#109618',
+                                lineWidth: 2,
+                                strokeStyle: '#000000'
+                            },
+                            endPointStyle: {
+                                radius: 6,
+                                fillStyle: '#dc3912',
+                                lineWidth: 2,
+                                strokeStyle: '#000000'
+                            },
+                            renderAllPointsIfNumberBelow:  msg1.length //绘制路线节点，如不需要可设置为-1
+                        }
+                });
+
+                window.pathSimplifierIns = pathSimplifierIns;              
+                //设置数据
+               pathSimplifierIns.setData([ { name:'已行驶轨迹', points:msg1}]);
+
+               $('#loadingTip').remove(); 
+                   //选中路线0
+                pathSimplifierIns.setSelectedPathIndex(0);
+                var navg1 = pathSimplifierIns.createPathNavigator(0, {
+                    loop: false,
+                    speed: 10000000,
+                    pathNavigatorStyle: {
+                        content: PathSimplifier.Render.Canvas.getImageContent('imgs/car.png', onload, onerror),
+                        pathLinePassedStyle: null,
+			            autoRotate: false,
+                        width:20,
+                        height:20,
+                        strokeStyle: null,
+                        fillStyle: null
+                    }
+                });
+                navg1.start();
+           });
+           marker1.setMap(map);
+           //marker1.setTitle(msg1[0].name);
+           marker2.setMap(map);
+           marker2.setTitle(msg2[msg2.length-1].name);
+        } //end function showLocation
+     
+    </script>
+</body>
+</html>

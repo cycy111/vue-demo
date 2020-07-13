@@ -1,0 +1,87 @@
+
+{
+    "pageIndex": 1,
+    "pageSize": 10,
+    "counts": 0,
+    "data": {
+        "items": [],
+        "reportItem": [
+            {
+                "bId": "2042",
+                "deptCode": "shanxi",
+                "deptName": "西北大区",
+                "version": "V1",
+                "remark": "",
+                "creator": "100",
+                "createDate": "2018-10-23 16:35:19",
+                "modifier": null,
+                "modifyDate": null,
+                "item": [
+                    {
+                        "bId": "2042",
+                        "itemCode": "amountInfo",
+                        "itemName": "本月出入库对比情况",
+                        "orderId": "2"
+                    },
+                    {
+                        "bId": "2042",
+                        "itemCode": "cBillInfo",
+                        "itemName": "盘点情况通报",
+                        "orderId": "8"
+                    },
+                    {
+                        "bId": "2042",
+                        "itemCode": "dullInfoBySixMonths",
+                        "itemName": "超6个月呆滞金额前10物资",
+                        "orderId": "5"
+                    },
+                    {
+                        "bId": "2042",
+                        "itemCode": "dullInfoByTwoYears",
+                        "itemName": "超2年呆滞金额前10物资",
+                        "orderId": "6"
+                    },
+                    {
+                        "bId": "2042",
+                        "itemCode": "kpiData",
+                        "itemName": "KPI指标情况",
+                        "orderId": "1"
+                    },
+                    {
+                        "bId": "2042",
+                        "itemCode": "orderInfo",
+                        "itemName": "仓库总体单据情况",
+                        "orderId": "3"
+                    },
+                    {
+                        "bId": "2042",
+                        "itemCode": "personInfo",
+                        "itemName": "人员变动情况",
+                        "orderId": "9"
+                    },
+                    {
+                        "bId": "2042",
+                        "itemCode": "planInfo",
+                        "itemName": "预约情况通报",
+                        "orderId": "7"
+                    },
+                    {
+                        "bId": "2042",
+                        "itemCode": "sAmountInfo",
+                        "itemName": "仓库金额排名靠前的主要物资",
+                        "orderId": "4"
+                    },
+                    {
+                        "bId": "2042",
+                        "itemCode": "whcodeArea",
+                        "itemName": "仓库总体面积使用",
+                        "orderId": "10"
+                    }
+                ]
+            }
+        ]
+    },
+    "resultCode": 1,
+    "resultCodes": "",
+    "message": "success"
+}
