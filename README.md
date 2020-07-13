@@ -1,4 +1,4 @@
-# web-home mine
+# web-home other
 
 ## Project setup
 ```
