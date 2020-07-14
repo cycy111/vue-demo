@@ -1,5 +1,5 @@
 # web-home other2
-
+V1.0.3
 ## Project setup
 ```
 yarn install
@@ -10,7 +10,7 @@ faefae
 ### Compiles and hot-reloads for development
 ```
 yarn run serve
-faefafe
+faefafe23423
 ```
 
 ### Compiles and minifies for production
