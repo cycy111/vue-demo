@@ -1,4 +1,4 @@
-# web-home other
+# web-home other2
 
 ## Project setup
 ```
@@ -34,10 +34,10 @@ yarn run test:e2e
 ### Run your unit tests
 ```
 yarn run test:unit
-#我的修改
-yarn update
-yarn init
+#我的修改2
+yarn update2
+yarn init2
 ```
-### xin quxiu kaifa 
+### xin quxiu kaifa q
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
