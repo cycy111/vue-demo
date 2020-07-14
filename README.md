@@ -3,6 +3,7 @@
 ## Project setup
 ```
 yarn install
+
 ```
 
 ### Compiles and hot-reloads for development
@@ -37,6 +38,6 @@ yarn run test:unit
 yarn update
 yarn init
 ```
-
+### xin quxiu kaifa 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
